@@ -1,75 +1,80 @@
-# Nuxt Minimal Starter
+# Notion Clone with Nuxt.js
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/mihonnnn/notion-clone-nuxt?utm_source=oss&utm_medium=github&utm_campaign=mihonnnn%2Fnotion-clone-nuxt&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
 
-## Setup
+## 概要
 
-Make sure to install dependencies:
+このプロジェクトは、Nuxt.js を使用して Notion のようなドキュメント管理システムを実装したクローンアプリケーションです。
+
+## 主な機能
+
+- 📝 リアルタイムドキュメント編集
+- 📁 ドキュメントの階層構造管理
+- 👥 コラボレーション機能
+- 🔍 検索機能
+- 🎨 カスタマイズ可能な UI
+
+## 技術スタック
+
+- Nuxt.js
+- TypeScript
+- Tailwind CSS
+- Supabase (認証・データベース)
+
+## セットアップ方法
+
+### 必要条件
+
+- Node.js (v16 以上)
+- npm または yarn
+
+### インストール
 
 ```bash
-# npm
+# リポジトリのクローン
+git clone https://github.com/mihonnnn/notion-clone-nuxt.git
+
+# プロジェクトディレクトリに移動
+cd notion-clone-nuxt
+
+# 依存関係のインストール
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
+# または
 yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+### 環境変数の設定
 
-Start the development server on `http://localhost:3000`:
+`.env`ファイルを作成し、必要な環境変数を設定してください：
+
+```env
+NUXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NUXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+```
+
+### 開発サーバーの起動
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
+# または
 yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## 使用方法
 
-Build the application for production:
+1. アプリケーションにアクセス
+2. アカウントを作成またはログイン
+3. 新しいドキュメントを作成
+4. ドキュメントの編集と共有
 
-```bash
-# npm
-npm run build
+## ライセンス
 
-# pnpm
-pnpm build
+MIT
 
-# yarn
-yarn build
+## 貢献
 
-# bun
-bun run build
-```
+プロジェクトへの貢献は大歓迎です。Issue の作成や Pull Request の送信をお願いします。
 
-Locally preview production build:
+## 作者
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- GitHub: [@mihonnnn](https://github.com/mihonnnn)
