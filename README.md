@@ -19,7 +19,10 @@
 - Nuxt.js
 - TypeScript
 - Tailwind CSS
-- Supabase (認証・データベース)
+- Firebase
+  - Firebase Hosting
+  - Cloud Firestore
+  - Firebase Authentication
 
 ## セットアップ方法
 
@@ -43,15 +46,6 @@ npm install
 yarn install
 ```
 
-### 環境変数の設定
-
-`.env`ファイルを作成し、必要な環境変数を設定してください：
-
-```env
-NUXT_PUBLIC_SUPABASE_URL=your-supabase-url
-NUXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
-```
-
 ### 開発サーバーの起動
 
 ```bash
@@ -70,10 +64,6 @@ yarn dev
 ## ライセンス
 
 MIT
-
-## 貢献
-
-プロジェクトへの貢献は大歓迎です。Issue の作成や Pull Request の送信をお願いします。
 
 ## 作者
 
